@@ -17,3 +17,10 @@
 # prettier
 yarn add -D prettier
 
+
+# husky
+
+yarn add -D husky
+npx husky install 创建.husky文件夹
+
+npx husky add .husky/pre-commit "yarn lint"
