@@ -17,10 +17,38 @@
 # prettier
 yarn add -D prettier
 
+```.prettierrc
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true
+}
+```
+
+```.prettierignore
+.yarn
+.next
+dist
+node_modules
+```
+
+```json
+"scripts: {
+  ...
+  "prettier": "prettier --write ."
+}
+```
+
 
 # husky
 
 yarn add -D husky
-npx husky install 创建.husky文件夹
 
-npx husky add .husky/pre-commit "yarn lint"
+npx husky init
+
+echo "yarn lint" > .husky/pre-commit
+
+# linter
+
+yarn add -D @commitlint/config-conventional @commitlint/cli
