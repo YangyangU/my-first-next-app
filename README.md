@@ -52,3 +52,16 @@ echo "yarn lint" > .husky/pre-commit
 # linter
 
 yarn add -D @commitlint/config-conventional @commitlint/cli
+
+# vscode
+
+```json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  }
+}
+```
